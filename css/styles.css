@@ -264,6 +264,9 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-logo {
@@ -306,7 +309,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -380,6 +383,18 @@ body {
 
     .cta-button:hover {
         background: #1f2937;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
     }
 }
 
