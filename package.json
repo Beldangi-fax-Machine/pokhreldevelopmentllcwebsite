@@ -1,0 +1,54 @@
+{
+  "name": "pokhrel-development-llc-website",
+  "version": "1.0.0",
+  "description": "Portfolio website for Pokhrel Development LLC",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm run build-css && next dev -p 3000",
+    "build": "npm run build-css && next build",
+    "start": "next start",
+    "export": "next export",
+    "build-css": "tailwindcss -i ./css/tailwind.css -o ./css/compiled-tailwind.css --minify",
+    "watch-css": "tailwindcss -i ./css/tailwind.css -o ./css/compiled-tailwind.css --watch",
+    "legacy-dev": "python3 -m http.server 8080 --bind 0.0.0.0",
+    "legacy-serve": "npx serve . -p 8080",
+    "deploy": "npm run build && npm run export",
+    "clean": "rm -rf .next out css/styles.output.css"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "pokhrel-development",
+    "responsive-design"
+  ],
+  "author": "Austin Pokhrel <austin@pokhreldevelopment.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "clean-css-cli": "^5.6.2",
+    "nodemon": "^3.0.0",
+    "postcss": "^8.5.6",
+    "serve": "^14.2.0",
+    "tailwindcss": "^3.4.17",
+    "terser": "^5.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beldangi-fax-Machine/pokhreldevelopmentllcwebsite.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Beldangi-fax-Machine/pokhreldevelopmentllcwebsite/issues"
+  },
+  "homepage": "https://github.com/Beldangi-fax-Machine/pokhreldevelopmentllcwebsite#readme",
+  "dependencies": {
+    "next": "^15.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
