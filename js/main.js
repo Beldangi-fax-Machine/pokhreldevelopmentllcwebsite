@@ -121,8 +121,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Remove the loader container code since it doesn't exist
-// Wait for DOM to be fully loaded before running any scripts
+// Simple page load handling
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Page loaded successfully');
 }); 
